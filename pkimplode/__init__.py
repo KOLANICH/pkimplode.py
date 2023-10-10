@@ -4,11 +4,14 @@ from io import BytesIO, IOBase
 from mmap import mmap
 from warnings import warn
 from zlib import crc32 as crc32_zlib
+from warnings import warn
 
 from pklib_base import PklibError
 from pklib_base.enums import CompressionType
 
 from .ctypes import _compressStream
+
+warn("We have moved from M$ GitHub to https://codeberg.org/implode-compression-impls/pkimplode.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 __all__ = ("compressStreamToStream", "compressStreamToBytes", "compressBytesChunkedToStream", "compressBytesChunkedToBytes", "compress")
 
